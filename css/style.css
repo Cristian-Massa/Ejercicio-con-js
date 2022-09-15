@@ -1,0 +1,102 @@
+/* General */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+
+body, html{
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+  }
+  
+  /* Principal */
+  .principal {
+    display: flex;
+    max-width: 768px;
+    min-width: 320px;
+  }
+
+    /* column  */
+
+  .column{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    width: 40%;
+    overflow: hidden;
+    transition: width .3s ease-in-out;
+    align-items: flex-start;
+  }
+
+  .column.active{
+    width: 60%;
+  }
+
+  .sedan{
+    background-color:hsl(31, 77%, 52%);
+  }
+
+  .suvs{
+    background-color:hsl(184, 100%, 22%);
+  }
+
+  .luxury{
+    background-color: hsl(179, 100%, 13%);
+  }
+
+  .column:first-child{
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .column:last-child{
+    border-radius: 0 1rem 1rem 0;
+  }
+
+  .text{
+    margin-bottom: 4rem;
+    font-size: 14px;
+  }
+
+  .title{
+    font-family: "Big Shoulders Display", cursive;
+    text-transform: uppercase;
+  }
+
+  .link{
+    background-color: white;
+    border-radius: 1rem;
+    width: 150px;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font: bold;
+  }
+
+.sedan a{
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs a{
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury a{
+    color: hsl(179, 100%, 13%);
+}
+
+.img{
+    width: 5rem;
+}
